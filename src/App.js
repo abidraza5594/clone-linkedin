@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Header from './Components/Header/Header';
+import SidBar from './Components/SideBar/SidBar';
+import Feed from './Components/Feed/Feed';
+import Widget from './Components/Widget/Widget';
+import EditProfile from './Components/EdirProfile/Editprofile';
+import {useSelector} from "react-redux"
+
 
 function App() {
+  const isopenprofile=useSelector(state=>state.profileData.isopenprofile)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app_wrapper">
+      <Header/>
+      <div className="app_body">
+        {!isopenprofile && <SidBar/>}
+        {!isopenprofile &&<Feed/>}
+        {!isopenprofile &&<Widget/>}
+        {isopenprofile && <EditProfile/>}
+      </div>
     </div>
   );
 }

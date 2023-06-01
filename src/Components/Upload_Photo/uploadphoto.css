@@ -1,0 +1,120 @@
+/* Modal Wrapper */
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Title Input */
+  #title {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Image Container */
+  .image-container {
+    margin-bottom: 20px;
+  }
+  
+  /* Uploaded Image */
+  .uploaded-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Default Image */
+  .default-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border: 1px dashed #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  /* Submitted Data */
+  .submitted-data {
+    margin-top: 20px;
+  }
+  
+  /* Submitted Image */
+  .submitted-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Buttons */
+  button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"] {
+    background-color: #28a745;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  button[type="submit"]:focus {
+    outline: none;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #ced4da;
+    cursor: not-allowed;
+  }
+  
+  button[type="submit"]:disabled:hover {
+    background-color: #ced4da;
+  }
+  
+  button[type="submit"]:disabled:focus {
+    outline: none;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active {
+    transform: translateY(1px);
+  }
+  
